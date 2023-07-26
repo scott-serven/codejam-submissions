@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>TimeEnjoyed Summer 2023 CodeJam Submissions</title>
+    <script>
+        // {
+        //     "projectName": "BetterThanCAndD",
+        //     "description": "This was supposed to be a nostalgia clip fetcher, but unfortunately, due to time constraints, the project was not able to be finished by the end of the Codejam. The way it was supposed to work was that the user would type the name of a browser source (already created by the user), and the OBS plugin would change the URL of the browser source to a random clip from a streamer (likely the user).",
+        //     "teamName": "BetterThanCAndD",
+        //     "teamMembers": [
+        //     {
+        //         "username": 'razvan',
+        //         "avatar": "https://cdn.discordapp.com/avatars/156086662978338817/4cefcebb2226e5d6377451fa25d17e41.png?size=80",
+        //     },
+        //     {
+        //         "username": 'wifi grll',
+        //         "avatar": "https://cdn.discordapp.com/avatars/341058334608064514/93501d787c7e6fa49457730b56c08a74.png?size=80",
+        //     },
+        // ],
+        //     "github": "https://github.com/TimeEnjoyed/BetterThanCAndD",
+        //     "demoSite": ""
+        // },
+
+
+        let data = [
+            {
+                "projectName": "Arivappa",
+                "description": "browser extension for checking status of timeenjoyed twitch stream",
+                "teamName": "Arivappa",
+                "teamMembers": [
+                    {
+                        "username": 'arivappa',
+                        "avatar": "https://cdn.discordapp.com/avatars/789128370813927456/f2aca5410041b783fa86a6784e7f1541.png?size=80",
+                    },
+                ],
+                "github": ["https://github.com/4rivappa/browser-extension-for-twitch-status", "https://github.com/4rivappa/twitch-streamer-status"],
+            },
+            {
+                "projectName": "Deadliner",
+                "description": "Deadliner is a Twitch Panel that can be viewed below a stream. The streamer can set deadlines, track them, and delete them. Everybody can view these deadlines to keep the streamer accountable.",
+                "teamName": "Team Typescript",
+                "teamMembers": [
+                    {
+                        "username": 'shivan',
+                        "avatar": "https://cdn.discordapp.com/avatars/746718705332912160/427615256965d13b0b274f13800e2d51.png?size=80",
+                    },
+                    {
+                        "username": 'ryan',
+                        "avatar": "https://cdn.discordapp.com/avatars/105683153976365056/68af3ac6b05af156b9dabc0f033ee73d.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/TimeEnjoyed/Team-Typescript",
+                "demoSite": "https://team-typescript.timeenjoyed.codejam.io/"
+            },
+            {
+                "projectName": "Gotato",
+                "description": "A Twitch chatbot that allows chatters to play hot potato for points that they can then gamble (for fun and non-channel points because Twitch doesn't allow bots to interact with channel points)!<br><br><b>Note to readers:</b> the initial sprint of work on this project led to the creation of gleam, a Go framework for building command-driven Twitch bots. It's an improved version of some of the architecture seen here, so if you're interested in making bots, check it out! There's even a simple timer example in the repo that you can build and run to get an idea of how it works.",
+                "teamName": "Glotchimo",
+                "teamMembers": [
+                    {
+                        "username": 'glotchimo',
+                        "avatar": "https://cdn.discordapp.com/avatars/363867011647799297/a_c868752e6fe22903c8b3fccff9ed4877.gif?size=80",
+                    },
+                ],
+                "github": "https://github.com/glotchimo/gotato/",
+                "demoSite": ""
+            },
+            {
+                "projectName": "TS Squad",
+                "description": "This is supposed to be a typing racer for the twitch community, where chat can join in an race, with a leaderboard at the end<br>Unfortunately due to time constraints, its just a plain old typing test",
+                "teamName": "TS Squad",
+                "teamMembers": [
+                    {
+                        "username": 'izee (directstar1)',
+                        "avatar": "https://cdn.discordapp.com/avatars/690886004260995082/9d6f9805a4ac693eecd2ac8d362b7d37.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/TimeEnjoyed/TS-SQUAD",
+                "demoSite": "https://ts-squad.timeenjoyed.codejam.io/"
+            },
+            {
+                "projectName": "Redemption ARC",
+                "description": "Redemption ARC (Automatically Reading Cooldowns) is a browser-source based UI for Twitch streamers to visualize the cooldowns of channel point redemptions on their stream.",
+                "teamName": "Only Bash",
+                "teamMembers": [
+                    {
+                        "username": 'badcop',
+                        "avatar": "https://cdn.discordapp.com/avatars/142003574195355648/320a77fbcbf2041e3853dd617ab9f177.png?size=80"
+                    }
+                ],
+                "github": "https://github.com/TimeEnjoyed/only_bash",
+                "demoSite": "https://arc.bashsta.cc/",
+                "demoVideo": "https://user-images.githubusercontent.com/4583705/253778510-3a21d222-0e2b-4d3e-9c04-40632459b121.mp4"
+            },
+            {
+                "projectName": "OTwitchML",
+                "description": "Basic Twitch Chatbot in oCaml<br>",
+                "teamName": "Real Chill Moshpit",
+                "teamMembers": [
+                    {
+                        "username": 'Chillymosh',
+                        "avatar": "https://cdn.discordapp.com/avatars/124278375832354818/5560d55f699fc217dad8320e518a2ec5.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/TimeEnjoyed/Real-Chill-Moshpit",
+                "demoSite": ""
+            },
+            {
+                "projectName": "Last Chance Predictions",
+                "description": "Last Chance Predictions is a browser extension which intelligently gambles your Twitch channel points. Pick your odds and a point limit, and Last Chance Predictions will automatically calculate which side to bet and how many points to bet and submit your prediction just in time!",
+                "teamName": "Undefined",
+                "teamMembers": [
+                    {
+                        "username": 'strager',
+                        "avatar": "https://cdn.discordapp.com/avatars/345398536550088705/887ec965c6c9d5562ebdb09bf856ecea.png?size=80",
+                    },
+                    {
+                        "username": 'emceemc',
+                        "avatar": "https://cdn.discordapp.com/avatars/217111905645494274/6e65f01979a57c5f2f01f41db99922ba.png?size=80"
+                    }],
+                "github": "https://github.com/TimeEnjoyed/Undefined",
+                "demoSite": ""
+            },
+            {
+                "projectName": "Dino Time Crunch",
+                "description": "The project's main objective is to create a Twitch extension that allows streamers to play a game with their viewers. This component extension launches a game instance and stores the results in the leaderboards.",
+                "teamName": "Jellyscript Jam",
+                "teamMembers": [
+                    {
+                        "username": 'Uberecks',
+                        "avatar": "https://cdn.discordapp.com/embed/avatars/0.png",
+                    },
+                    {
+                        "username": 'Akaremon',
+                        "avatar": "https://cdn.discordapp.com/avatars/1055257755545514055/c72e535c4bd60255dde78f5a88446c73.png?size=80",
+                    },
+                    {
+                        "username": 'HenryIV',
+                        "avatar": "https://cdn.discordapp.com/avatars/179281393447075842/43250a1cb7c466ae8eeca4699d0c107e.png?size=80",
+                    },
+                    {
+                        "username": 'ChrisPNugget',
+                        "avatar": "https://cdn.discordapp.com/avatars/300359015102283787/6984635805ce3986b4e5b81ef30a0deb.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/TimeEnjoyed/jellyscript-jam",
+                "demoSite": "https://varangian-core.github.io/Dino-Time-Crunch/",
+                "demoVideo": "https://www.youtube.com/watch?v=c0HqZH1KW6s"
+            },
+            {
+                "projectName": "First!",
+                "description": "First! is a Twitch app for the first people to join your streams.",
+                "teamName": "n00bz",
+                "teamMembers": [
+                    {
+                        "username": 'strager',
+                        "avatar": "https://cdn.discordapp.com/avatars/345398536550088705/887ec965c6c9d5562ebdb09bf856ecea.png?size=80",
+                    },
+                    {
+                        "username": 'mate_amargo',
+                        "avatar": "https://cdn.discordapp.com/avatars/350359071960072196/23a7949d450f52c50ea0a4eab86158cb.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/TimeEnjoyed/n00bz",
+                "demoSite": "https://first.strager.net/",
+                "demoVideo": "https://www.youtube.com/watch?v=-T8BXWwYftw"
+            },
+            {
+                "projectName": "Twitch Chat Spectator",
+                "description": "This is Javascript application that allows you to spectate over users that join / leave particular Twitch channels.",
+                "teamName": "mrdky",
+                "teamMembers": [
+                    {
+                        "username": 'bohemian',
+                        "avatar": "https://cdn.discordapp.com/embed/avatars/0.png",
+                    },
+                    {
+                        "username": 'lord_r_sling',
+                        "avatar": "https://cdn.discordapp.com/avatars/761986472038891581/002c2bda9ac8392c51ab327fd409d2e9.png?size=80",
+                    },
+                    {
+                        "username": 'neyl',
+                        "avatar": "https://cdn.discordapp.com/avatars/254691230192107531/fa76d41ebbf62fe7fb9ebac9b0fd6df8.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/TimeEnjoyed/mrdky",
+                "demoSite": "https://chat-spectator.neyl.dev/"
+            },
+            {
+                "projectName": "TwitchTube",
+                "description": "TwitchTube is a web application that allows users to discover and watch Twitch streams. It provides a user-friendly interface to explore streams related to gaming, technology, programming, and more.",
+                "teamName": "110100100",
+                "teamMembers": [
+                    {
+                        "username": 'Stama Metaxas',
+                        "avatar": "https://cdn.discordapp.com/embed/avatars/0.png",
+                    },
+                    {
+                        "username": 'ItsDucky',
+                        "avatar": "https://cdn.discordapp.com/avatars/721934333870342206/43094ea8232df4dcdab5fb74f29fe5f1.png?size=80",
+                    },
+                    {
+                        "username": 'zippy',
+                        "avatar": "https://cdn.discordapp.com/avatars/261019820311445507/68d0d381958e22050813afe05ef71e36.png?size=80",
+                    },
+                    {
+                        "username": 'DeeRah',
+                        "avatar": "https://cdn.discordapp.com/avatars/936424966566580224/2bc10e1aeebfd613dcefc09a6065fc69.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/TimeEnjoyed/110100100",
+                "demoSite": ""
+            },
+            {
+                "projectName": "Followversary Bot",
+                "description": "Recognize the viewers that have stuck with you!",
+                "teamName": "stoners",
+                "teamMembers": [
+                    {
+                        "username": 'cmgriffing',
+                        "avatar": "https://cdn.discordapp.com/avatars/135133859548364800/0336542bcb1c87e0f98c62abadf421eb.png?size=80",
+                    },
+                    {
+                        "username": 'bedtimebear808',
+                        "avatar": "https://cdn.discordapp.com/avatars/187110349365837824/e75eb70a1968d88768cfe39c2262c549.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/cmgriffing/followversarybot",
+                "demoSite": "https://cmgriffing.github.io/followversarybot/"
+            },
+            {
+                "projectName": "Twitch Clip Rewind",
+                "description": "Look back in <b>time</b> at your best stream highlights<br>A simple website that \"generates\" a \"rewind\" from your most viewed Twitch clips from a specific time period.",
+                "teamName": "Gamis65",
+                "teamMembers": [
+                    {
+                        "username": 'gamis65',
+                        "avatar": "https://cdn.discordapp.com/avatars/375185954144649216/59ce648f1c3ed0e09b55fe9754508579.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/TimeEnjoyed/gamis65",
+                "demoSite": "https://gamis65.timeenjoyed.codejam.io/"
+            },
+            {
+                "projectName": "Bot-Potato",
+                "description": "To satisfy the codejam requirements of coding a Twitch-related project which includes the theme of 'time', we decided to make a chat bot which can play Hot Potato with chatters!",
+                "teamName": "Team Trash",
+                "teamMembers": [
+                    {
+                        "username": 'TrshPuppy',
+                        "avatar": "https://cdn.discordapp.com/avatars/609473554404212747/ebc56f70bd5284b8bd76b8bae8766642.png?size=80",
+                    },
+                    {
+                        "username": 'Rulerlefi',
+                        "avatar": "https://cdn.discordapp.com/avatars/1001088255531425872/5b42fcc391e8ad54b6ec0283ae11259e.png?size=80",
+                    },
+                    {
+                        "username": 'Turning_Moon_Yatch',
+                        "avatar": "https://cdn.discordapp.com/avatars/341058334608064514/93501d787c7e6fa49457730b56c08a74.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/TimeEnjoyed/Team-Trash",
+                "demoSite": ""
+            },
+            {
+                "projectName": "Timeblocks",
+                "description": "A little bit like Wordle but much worse I am afraid!",
+                "teamName": "Eggs and Happiness",
+                "teamMembers": [
+                    {
+                        "username": 'rawoke',
+                        "avatar": "https://cdn.discordapp.com/avatars/396983056243621898/a7a390ee15b41f33248883a45476696b.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/TimeEnjoyed/Eggs-and-Happiness",
+                "demoSite": "https://eggs-and-happiness.timeenjoyed.codejam.io/"
+            },
+            {
+                "projectName": "Twitch Plays LLM",
+                "description": "A collaborative twitch-based choose-your-own-adventure game" +
+                    "Twitch Plays Llm a text-based choose-your-own-adventure game (ie. AI dungeon) set within a specific theme. For the time theme, our game has integrated by default a story where the main character is a novelty version of our code jam host, TimeEnjoyed/Esther. Esther is described as a bird enthusiast, artist, and programmer with time related superpowers. She also has a number of \"voices\" in her head that control her actions that are referred to as her \"Twitch\". The game is played collaboratively through Twitch chat.",
+                "teamName": "Maybe Learning",
+                "teamMembers": [
+                    {
+                        "username": 'phoenix',
+                        "avatar": "https://cdn.discordapp.com/avatars/272596665217712128/fcb5816298e2b17a63c8e850765de2c3.png?size=80",
+                    },
+                    {
+                        "username": 'matthew',
+                        "avatar": "https://cdn.discordapp.com/avatars/455177712366125067/eeff486cd41f3c18fe3c02285fbaaf25.png?size=80",
+                    },
+                    {
+                        "username": 'mjshi',
+                        "avatar": "https://cdn.discordapp.com/avatars/149535443250184192/55c96a7c2a7df1ce344c8d3523e2ddde.png?size=80",
+                    },
+                    {
+                        "username": 'xman',
+                        "avatar": "https://cdn.discordapp.com/embed/avatars/0.png",
+                    },
+                    {
+                        "username": 'eritorigon',
+                        "avatar": "https://cdn.discordapp.com/avatars/367824230785613825/8d9a8313e334fe4f30d9b5a466228655.png?size=80",
+                    },
+                    {
+                        "username": 'kish',
+                        "avatar": "https://cdn.discordapp.com/avatars/732218740535721995/157a44e2dde023eb5b1a2003f6e7434f.png?size=80",
+                    },
+                    {
+                        "username": 'gray00',
+                        "avatar": "https://cdn.discordapp.com/avatars/239666022972522497/cd86050b6c3410ae50cc5ba587deee91.webp?size=80",
+                    },
+                ],
+                "github": "https://github.com/TimeEnjoyed/Maybe-Learning",
+                "demoSite": "https://maybe-learning.timeenjoyed.codejam.io/"
+            },
+            {
+                "projectName": "Time Managed",
+                "description": "Time Managed is a simple stream planner that gives you a neat little overlay to keep track of what you've planned for your stream and how long each segment will take.",
+                "teamName": "neutrino2211",
+                "teamMembers": [
+                    {
+                        "username": 'neutrino2211',
+                        "avatar": "https://cdn.discordapp.com/avatars/705167448663392326/b23a3708aac45c2c481af30921ff77e2.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/TimeEnjoyed/neutrino2211",
+                "demoSite": "https://neutrino2211.timeenjoyed.codejam.io/"
+            },
+            {
+                "projectName": "Twitch Chat History",
+                "description": "Records all chat messages for one or more Twitch channels, into a MySQL database.<br><br>" +
+                    "Provides a UI for viewing/querying those messages.",
+                "teamName": "Team",
+                "teamMembers": [
+                    {
+                        "username": 'devenu',
+                        "avatar": "https://cdn.discordapp.com/avatars/184832083707953157/738f6be49d5713367131731970ff9deb.png?size=80"
+                    },
+                    {
+                        "username": 'xmetrix',
+                        "avatar": "https://cdn.discordapp.com/avatars/108266959895789568/e0dd8c47af3381eb5901f1036df00fc2.png?size=80"
+                    }
+                ],
+                "github": "https://github.com/TimeEnjoyed/team",
+                "demoSite": "https://team.timeenjoyed.codejam.io/"
+            },
+            {
+                "projectName": "StopWatchBot",
+                "description": "This is a Clojure application that provides a stopwatch bot.",
+                "teamName": "programmer.frank",
+                "teamMembers": [
+                    {
+                        "username": 'programmer.frank',
+                        "avatar": "https://cdn.discordapp.com/avatars/288056885096218624/9b34069ab9f092678ef1de206b6da6a5.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/FrankBuss/stopwatchbot",
+            },
+            {
+                "projectName": "Time Enjoyed Time Capsule",
+                "description": "An interactive & fun way to capture, store, & retrieve memories with your viewers!",
+                "teamName": "Npm run dev",
+                "teamMembers": [
+                    {
+                        "username": 'chooky',
+                        "avatar": "https://cdn.discordapp.com/avatars/246929654479454208/62a99957e66ad3648f53949049c9f062.png?size=80",
+                    },
+                    {
+                        "username": 'solana',
+                        "avatar": "https://cdn.discordapp.com/avatars/226945939057672192/4bc135a9089f4102d1e6846298651331.png?size=80",
+                    },
+                    {
+                        "username": 'jason',
+                        "avatar": "https://cdn.discordapp.com/avatars/358019384859557898/ae8e8e9eb35d436a72f932b3089715a6.png?size=80",
+                    },
+                ],
+                "github": ['https://github.com/TimeEnjoyed/npm-run-dev-front-end', 'https://github.com/TimeEnjoyed/npm-run-dev-api'],
+                "demoSite": ""
+            },
+            {
+                "projectName": "Pomodoro Twitch Extension",
+                "description": "Typescript react extension for showing pomodoro statuses and allowing updates of pomodoro statuses.",
+                "teamName": "Team SHB",
+                "teamMembers": [
+                    {
+                        "username": 'Beerzerger',
+                        "avatar": "https://cdn.discordapp.com/embed/avatars/0.png",
+                    },
+                    {
+                        "username": 'MichaelPCgamer',
+                        "avatar": "https://cdn.discordapp.com/embed/avatars/0.png",
+                    },
+                    {
+                        "username": 'HxMoyu',
+                        "avatar": "https://cdn.discordapp.com/avatars/353734174458249216/aff197de45a9f457848544742a730fef.png?size=80",
+                    },
+                    {
+                        "username": 'swiftyspiffy',
+                        "avatar": "https://cdn.discordapp.com/avatars/92700503183486976/f8367e965a913d694a997f06e2488bd4.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/TimeEnjoyed/Team-SHB",
+                "demoSite": "https://team-shb.timeenjoyed.codejam.io/"
+            },
+            {
+                "projectName": "TimeToGrow",
+                "description": "This project wants to be a twitch-overlay game where viewers can use redemptions and commands to plant flowers, water them, and sabotage other user's flowers. We didn't finish it by the deadline, but will continue to work on it after the codejam.",
+                "teamName": "Time To Grow",
+                "teamMembers": [
+                    {
+                        "username": 'TimeEnjoyed',
+                        "avatar": "https://cdn.discordapp.com/avatars/424384163454517268/874accf7a02a281f4b5b0e6588794f46.png?size=80",
+                    },
+                    {
+                        "username": 'AmbivalentBunnie',
+                        "avatar": "https://cdn.discordapp.com/avatars/364659802993065985/72422b1633a90ddcef196230501686a9.png?size=1024",
+                    },
+                    {
+                        "username": 'Mysty',
+                        "avatar": "https://cdn.discordapp.com/avatars/402159684724719617/9e1f7808fbea1404a521becb72b73f45.png?size=80",
+                    },
+                ],
+                "github": "https://github.com/TimeEnjoyed/TimeToGrow",
+                "demoSite": ""
+            },
+
+            {
+                "projectName": "Time2Grow (Mysty Version)",
+                "description": "This is my \"Non-Official\" entry for TimeEnjoyed CodeJam<br>" +
+                    "This entry is purely for educational purposes to allow the TimeToGrow team to compare each-others versions and code<br>" +
+                    "The Game idea is all thanks to Bunnie and TimeEnjoyed <3",
+                "teamName": "Time To Grow",
+                "teamMembers": [
+                    {
+                        "username": 'Mysty',
+                        "avatar": "https://cdn.discordapp.com/avatars/402159684724719617/9e1f7808fbea1404a521becb72b73f45.png?size=80",
+                    },
+                    {
+                        "username": 'TimeEnjoyed',
+                        "avatar": "https://cdn.discordapp.com/avatars/424384163454517268/874accf7a02a281f4b5b0e6588794f46.png?size=80",
+                    },
+                    {
+                        "username": 'AmbivalentBunnie',
+                        "avatar": "https://cdn.discordapp.com/avatars/364659802993065985/72422b1633a90ddcef196230501686a9.png?size=1024",
+                    },
+                ],
+                "github": "https://github.com/EvieePy/Time2Grow",
+                "demoSite": ""
+            },
+        ];
+
+        addEventListener("DOMContentLoaded", (event) => {
+            let container = document.querySelector('#submissions');
+            for (let project of data) {
+                let projectContainer = document.createElement('div');
+                let githubLinks = '';
+                if (Array.isArray(project.github)) {
+                    githubLinks = '<ul>'
+                    for (let link of project.github) {
+                        githubLinks += `<li><a href="${link}">${link}</a></li>`;
+                    }
+                    githubLinks += '</ul>';
+                } else {
+                    githubLinks = `<a href="${project.github}">${project.github}</a>`;
+                }
+
+                let demoLink = '';
+                if (project.demoSite) {
+                    demoLink = `<div className="demo">Demo: <a href="${project.demoSite}">${project.demoSite}</a></div>`;
+                }
+                let demoVideo = '';
+                if (project.demoVideo) {
+                    demoVideo = `<div className="demo">Video: <a href="${project.demoVideo}">${project.demoVideo}</a></div>`;
+                }
+                let members = '';
+                for (member of project.teamMembers) {
+                    members += `
+                        <div class="teamMemberContainer">
+                            <img class="teamMemberAvatar" src="${member.avatar}"/>
+                            <div class="teamMemberName">${member.username}</div>
+                        </div>
+                    `
+                }
+
+                projectContainer.innerHTML = `
+                    <div class="card">
+                    <div class="cardTitle">
+                        <div class="projectName">${project.projectName}</div>
+                    </div>
+                    <div class="cardBody">
+                        <div class="description">${project.description}</div>
+                        <div class="teamNameContainer">Team: <span class="teamName">${project.teamName}</span></div>
+                        <div class="teamMembers">${members}</div>
+                        <div class="github">GitHub: ${githubLinks}</div>
+                        ${demoLink}
+                        ${demoVideo}
+                    </div>
+                    </div>
+                `;
+                container.appendChild(projectContainer);
+            }
+        });
+    </script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Ubuntu+Mono&family=Roboto&display=swap");
+        :root {
+            --accent-color: rgb(246, 171, 181);
+            --text-color: rgb(245, 245, 245);
+        }
+        .cursiveTitle {
+            font-family: "Liu Jian Mao Cao",cursive;
+            font-size: 1.8rem;
+            font-weight: normal;
+        }
+        .codejam {
+            font-weight: normal;
+            font-size: 3rem;
+            margin: 0;
+        }
+        body {
+            margin: 0;
+            background-color: #000;
+            color: var(--text-color);
+            font-size: 1rem;
+            font-family: "Ubuntu Mono", monospace;
+        }
+        a {
+            color: var(--accent-color);
+        }
+        a:hover {
+            color: rgb(146, 190, 255);
+        }
+        .background-base {
+            position: fixed;
+            background: linear-gradient(0deg, rgb(0, 6, 15) 0%, rgb(64, 86, 108, 0.5) 100%);
+            width: 100vw;
+            height: 100vh;
+            z-index: -2;
+        }
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 700px;
+            padding: 10px 20px;
+        }
+        .brand {
+            height: 100%;
+        }
+        .title {
+            height: 100%;
+            font-size: 3rem;
+            font-weight: bold;
+            font-family: "Ubuntu Mono", monospace;
+            color: var(--accent-color);
+            padding-left: 30px;
+            justify-content: right;
+        }
+        .main {
+            padding: 40px 20px;
+            border-radius: 20px;
+            justify-content: center;
+            margin: 20px auto;
+            width: 900px;
+            background: #3f4d68;
+            box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.3);
+            border-right: 1px solid #000;
+            border-left: 1px solid #000;
+        }
+        .card {
+            border: 1px solid #999;
+            box-shadow: 0 4px 12px #000;
+            border-radius: 8px;
+            margin: 0 20px 40px 20px;
+            font-family: "Roboto", sans-serif;
+        }
+        .cardTitle {
+            background-color: #222;
+            padding: 0.4em 2em 0.25em 1.5em;
+            border-radius: 8px 8px 0 0;
+            border-bottom: 1px solid #555;
+            z-index: 1;
+        }
+        .cardBody {
+            padding: 1.5em;
+            background-color: #2d2d2d;
+            border-radius: 0 0 8px 8px;
+            line-height: 1.35em;
+        }
+        .projectName {
+            font-size: 1.7em;
+        }
+        .description {
+            margin-bottom: 2em;
+        }
+        .teamMemberContainer {
+            line-height: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .teamNameContainer {
+            font-size: 1.25em;
+            margin-top: 10px;
+        }
+
+        .teamName {
+            font-size: 1.0em;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+        .teamMembers {
+            display: flex;
+            flex-direction: row;
+            column-gap: 1em;
+            margin: 0.75em 0 1.5em 1em;
+            font-family: "Ubuntu Mono", monospace;
+            color: var(--accent-color);
+            font-size: 1.0rem;
+        }
+        .teamMemberAvatar {
+            width: 3em;
+            height: 3em;
+            border-radius: 50%;
+            border: 2px solid #ccc;
+        }
+        .teamMemberName {
+            margin-top: 0.25em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background-base"></div>
+    <div class="background-overlay"></div>
+    <header>
+        <div class="brand">
+            <div class="cursiveTitle">TimeEnjoyed's</div>
+            <div class="codejam">&lt;codejam/&gt;</div>
+        </div>
+        <div class="title">
+            Submissions
+        </div>
+    </header>
+    <div class="main">
+        <div id="submissions">
+
+        </div>
+
+    </div>
+</body>
+</html>
